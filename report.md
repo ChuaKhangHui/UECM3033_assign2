@@ -13,12 +13,13 @@ The reports, codes and supporting documents are to be uploaded to Github at:
 [https://github.com/ChuaKhangHui/UECM3033_assign2](https://github.com/ChuaKhangHui/UECM3033_assign2)
 Explain your selection criteria here.
 
--1. Check strictly diagonally dominant Matrix
+1. Check strictly diagonally dominant Matrix
 -	if (Matrix A is strictly diagonally dominant)
 -		then Solve it by LU
 -	else
 -		cotinue to 2
--2. Check possitive Definite 
+
+2. Check possitive Definite 
 -	if (Matrix A is possitive definite and all diagonal element are possitive)
 -		then Solve it by SOR
 -	else
