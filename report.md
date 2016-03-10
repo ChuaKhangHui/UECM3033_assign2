@@ -11,18 +11,27 @@ UECM3033 Assignment #2 Report
 The reports, codes and supporting documents are to be uploaded to Github at: 
 
 [https://github.com/ChuaKhangHui/UECM3033_assign2](https://github.com/ChuaKhangHui/UECM3033_assign2)
+
 Explain your selection criteria here.
 
 1. Check strictly diagonally dominant Matrix
+
 -	if (Matrix A is strictly diagonally dominant)
+
 --		then Solve it by LU
+
 -	else
+
 --		continue to 2
 
 2. Check possitive Definite 
+
 -	if (Matrix A is possitive definite and all diagonal element are possitive)
+
 --		then Solve it by SOR
+
 -	else
+
 --		Solve it by LU
 		
 Explain how you implement your `task1.py` here.
@@ -30,8 +39,10 @@ Explain how you implement your `task1.py` here.
 Matrix A is classified as strictly diagonally dominant matrix when (2* diagonal element > sum of row) for all rows.
 
 In python: 
-	temp = 2 * np.diag(A) > np.sum(np.abs(A),1)
-    result = temp.all()
+
+'	temp = 2 * np.diag(A) > np.sum(np.abs(A),1)'
+'    result = temp.all()                       '
+
 If the result is true, then A is a strictly diagonally dominant Matrix
 
 Matrix A is classified as strictly possitive definite matrix when  np.linalg.cholesky(A) return no error.
