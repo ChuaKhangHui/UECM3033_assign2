@@ -1,8 +1,8 @@
 UECM3033 Assignment #2 Report
 ========================================================
 
-- Prepared by: ** Put your name here**
-- Tutorial Group: T2/T3
+- Prepared by: Chua Khang Hui
+- Tutorial Group: T2
 
 --------------------------------------------------------
 
@@ -10,20 +10,19 @@ UECM3033 Assignment #2 Report
 
 The reports, codes and supporting documents are to be uploaded to Github at: 
 
-[https://github.com/your_github_id/UECM3033_assign1](https://github.com/your_github_id/UECM3033_assign1)
-
+[https://github.com/ChuaKhangHui/UECM3033_assign2](https://github.com/ChuaKhangHui/UECM3033_assign2)
 Explain your selection criteria here.
 
-1. Check strictly diagonally dominant Matrix
-	if (Matrix A is strictly diagonally dominant)
-		then Solve it by LU
-	else
-		cotinue to 2
-2. Check possitive Definite 
-	if (Matrix A is possitive definite and all diagonal element are possitive)
-		then Solve it by SOR
-	else
-		Solve it by LU
+-1. Check strictly diagonally dominant Matrix
+-	if (Matrix A is strictly diagonally dominant)
+-		then Solve it by LU
+-	else
+-		cotinue to 2
+-2. Check possitive Definite 
+-	if (Matrix A is possitive definite and all diagonal element are possitive)
+-		then Solve it by SOR
+-	else
+-		Solve it by LU
 		
 Explain how you implement your `task1.py` here.
 
@@ -45,9 +44,9 @@ If all element is possitive, then we solve it by SOR, else, slove it by LU.
 
 ## Task 2 -- SVD method and image compression
 
-Put here your picture file (KB.png)
+Put here your picture file (KB.jpg)
 
-![KB.png](KB.png)
+![KB.jpg](KB.jpg)
 
 How many non zero element in $\Sigma$?
 For am NxM sized image, the number of zeros in $\Sigma$ will be (N $\times$ M - N) 
@@ -56,10 +55,10 @@ Put here your lower and better resolution pictures. Explain how you generate
 these pictures from `task2.py`.
 
 The image with lower resolution
-![KB_lower.png](KB_lower.png)
+![KB_lower.jpg](KB_lower.jpg)
 
 The image with better resolution
-![KB_better.png](KB_better.png)
+![KB_better.jpg](KB_better.jpg)
 
 First, recaculate a new $\Sigma$ with differnt number of eigenvector used, 30 for lower resolution and 200 for better resolution.
 Both picture is then obtain by compute the matrix by U $?\Sigma$ V for each color layer, then merge togehter to become an image in RGB format.
