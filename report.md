@@ -41,6 +41,7 @@ Matrix A is classified as strictly diagonally dominant matrix when (2* diagonal 
 In python: 
 
 `	temp = 2 * np.diag(A) > np.sum(np.abs(A),1)`
+
 `    result = temp.all()                       `
 
 If the result is true, then A is a strictly diagonally dominant Matrix
@@ -72,12 +73,12 @@ The image with lower resolution
 The image with better resolution
 ![KB_better.jpg](KB_better.jpg)
 
-First, recaculate a new $\Sigma_n$ with $n$ number of eigenvector used, 30 for lower resolution and 200 for better resolution.
+First, calculate a new $\Sigma_n$ with $n$ number of eigenvector used, 30 for lower resolution and 200 for better resolution.
 Both picture is then obtain by compute the matrix by U $\Sigma_n$ V for each color layer, then merge togehter to become an image in RGB format.
 
 What is a sparse matrix?
 
-Sparse matrix is the matrix with high percentage of zero entries.
+Sparse matrix is the matrix with high prcentage of zero entries.
 In this assignment, $\Sigma_n$ is the example of sparse matrix which contain only $n$ non-zero element out of $N \times M$ element.
 
 -----------------------------------
