@@ -40,8 +40,8 @@ Matrix A is classified as strictly diagonally dominant matrix when (2* diagonal 
 
 In python: 
 
-'	temp = 2 * np.diag(A) > np.sum(np.abs(A),1)'
-'    result = temp.all()                       '
+`	temp = 2 * np.diag(A) > np.sum(np.abs(A),1)`
+`    result = temp.all()                       `
 
 If the result is true, then A is a strictly diagonally dominant Matrix
 
