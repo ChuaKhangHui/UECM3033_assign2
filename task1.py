@@ -98,6 +98,14 @@ def check_condition(A):
         #Check possitive Definite Matrix
         np.linalg.cholesky(A)
         
+        #check possitive eigenvalue  
+        val = la.eigvals(A)
+        temp = val > 0
+        result = temp.all()
+        if (~result):
+            #some eigenvalue is negative
+            retrun True
+        
         #possitive diaganal element
         temp = np.diag(A) > 0
         result = temp.all()

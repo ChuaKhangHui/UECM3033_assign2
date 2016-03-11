@@ -24,9 +24,9 @@ Explain your selection criteria here.
 
 --		continue to 2
 
-2. Check possitive Definite 
+2. Check positive Definite 
 
--	if (Matrix A is possitive definite and all diagonal element are possitive)
+-	if (Matrix A is positive definite and all diagonal element are positive and all eigenvalue is positive)
 
 --		then Solve it by SOR
 
@@ -46,11 +46,11 @@ In python:
 
 If the result is true, then A is a strictly diagonally dominant Matrix
 
-Matrix A is classified as strictly possitive definite matrix when  np.linalg.cholesky(A) return no error.
+Matrix A is classified as strictly positive definite matrix when  np.linalg.cholesky(A) return no error.
 
 If error received, slove it by LU.
-else no error received, then check for possitive diagonal element.
-If all element is possitive, then we solve it by SOR, else, slove it by LU.
+else no error received, then check for positive diagonal element.
+If all element is positive, then we solve it by SOR, else, slove it by LU.
 
 
 ---------------------------------------------------------
