@@ -104,14 +104,14 @@ def check_condition(A):
         result = temp.all()
         if (~result):
             #some eigenvalue is negative
-            retrun True
+            return True
         
         #possitive diaganal element
         temp = np.diag(A) > 0
         result = temp.all()
         if (~result):
             #some diagonal element is negative
-            retrun True
+            return True
         
     except np.linalg.linalg.LinAlgError :
         #'Solve by lu'
