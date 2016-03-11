@@ -22,13 +22,14 @@ plt.show()
 img2=mpimg.imread('KB.jpg')
 [r2,g2,b2] = [img2[:,:,i] for i in range(3)]
 
-red = {'Index' : 0,'Mat': r2, 'Color' : 'Reds'}
-green = {'Index' : 1, 'Mat': g2, 'Color' : 'Greens'}
-blue = {'Index' : 2, 'Mat': b2, 'Color' : 'Blues'}
+red = {'Index' : 0,'Mat': r2, 'Color' : 'Reds', 'img' : 'KB_red'}
+green = {'Index' : 1, 'Mat': g2, 'Color' : 'Greens', 'img' : 'KB_green'}
+blue = {'Index' : 2, 'Mat': b2, 'Color' : 'Blues', 'img' : 'KB_blue'}
 rgb = [red,green,blue]
 
 for color in rgb:
     plt.imshow(color['Mat'], cmap = color['Color'])
+    plt.imsave(color['img'],img_new)
     plt.show()
     
     # SVD decomposition of img
