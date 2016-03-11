@@ -48,9 +48,10 @@ If the result is true, then A is a strictly diagonally dominant Matrix
 
 Matrix A is classified as strictly positive definite matrix when  np.linalg.cholesky(A) return no error.
 
-If error received, slove it by LU.
-else no error received, then check for positive diagonal element.
-If all element is positive, then we solve it by SOR, else, slove it by LU.
+If error received, solve it by LU.
+
+else no error received, then check for positive diagonal element and positive eigenvalue.
+If all above condition satisfies, then we solve it by SOR, else, solve it by LU.
 
 
 ---------------------------------------------------------
@@ -63,7 +64,7 @@ Put here your picture file (KB.jpg)
 
 How many non zero element in $\Sigma$?
 
-For a $M \times N$ sized image, the number of zeros in $\Sigma$ will be $(N \times M - N)$ 
+For a $M \times N$ sized image, the number of zero in $\Sigma$ will be $(N \times M - N)$ 
 
 Put here your lower and better resolution pictures. Explain how you generate these pictures from `task2.py`.
 
@@ -74,11 +75,11 @@ The image with better resolution
 ![KB_better.jpg](KB_better.jpg)
 
 First, calculate a new $\Sigma_n$ with $n$ number of eigenvector used, 30 for lower resolution and 200 for better resolution.
-Both picture is then obtain by compute the matrix by U $\Sigma_n$ V for each color layer, then merge togehter to become an image in RGB format.
+Both picture is then obtain by compute the matrix by U $\Sigma_n$ V for each color layer, then merge together to become an image in RGB format.
 
 What is a sparse matrix?
 
-Sparse matrix is the matrix with high prcentage of zero entries.
+Sparse matrix is the matrix with high percentage of zero entries.
 In this assignment, $\Sigma_n$ is the example of sparse matrix which contain only $n$ non-zero element out of $N \times M$ element.
 
 -----------------------------------
